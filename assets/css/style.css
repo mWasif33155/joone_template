@@ -296,6 +296,392 @@ section.sec-6 {
 }
 
 
+/*Register seller form*/
+
+.services-list-section fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: flex-start;
+    min-width: 400px;
+}
+
+.services-list-section label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.services-list-section input {
+    position: relative !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 8px;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+.services-list-section input:before {
+    content: "";
+    display: block;
+    box-sizing: content-box;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    transition: 0.2s border-color ease;
+}
+
+.services-list-section input:checked:before {
+    border-color: #12cbc4;
+    transition: 0.5s border-color ease;
+}
+
+.services-list-section input:disabled:before {
+    border-color: #ccc;
+    background-color: #ccc;
+}
+
+.services-list-section input:after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%;
+    background-color: #12cbc4;
+    width: 16px;
+    height: 16px;
+    border-radius: 100vh;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.services-list-section input[type="radio"]:before {
+    border-radius: 100vh;
+}
+
+.services-list-section input[type="radio"]:after {
+    width: 16px;
+    height: 16px;
+    border-radius: 100vh;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.services-list-section input[type="radio"]:checked:after {
+    -webkit-animation: toggleOnRadio 0.2s ease forwards;
+    animation: toggleOnRadio 0.2s ease forwards;
+}
+
+.services-list-section input[type="checkbox"]:before {
+    border-radius: 4px;
+}
+
+.services-list-section input[type="checkbox"]:after {
+    width: 9.6px;
+    height: 16px;
+    border-radius: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
+    background-color: transparent;
+    box-shadow: 4px 4px 0px 0px #12cbc4;
+}
+
+.services-list-section input[type="checkbox"]:checked:after {
+    -webkit-animation: toggleOnCheckbox 0.2s ease forwards;
+    animation: toggleOnCheckbox 0.2s ease forwards;
+}
+
+.services-list-section input[type="checkbox"].filled:before {
+    border-radius: 4px;
+    transition: 0.2s border-color ease, 0.2s background-color ease;
+}
+
+.services-list-section input[type="checkbox"].filled:checked:not(:disabled):before {
+    background-color: #12cbc4;
+}
+
+.services-list-section input[type="checkbox"].filled:not(:disabled):after {
+    box-shadow: 4px 4px 0px 0px white;
+}
+
+@-webkit-keyframes toggleOnCheckbox {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -85%) scale(0) rotate(45deg);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+    }
+    100% {
+        transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+    }
+}
+
+@keyframes toggleOnCheckbox {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -85%) scale(0) rotate(45deg);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+    }
+    100% {
+        transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+    }
+}
+
+@-webkit-keyframes toggleOnRadio {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+@keyframes toggleOnRadio {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+.register-heading img {
+    width: auto;
+    padding: 0px;
+    height: 40px;
+}
+
+.register-heading h3 {
+    width: auto;
+    padding-top: 0px;
+    font-family: adelline;
+    font-weight: 700;
+}
+
+.reg-seller-page {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.row.register-heading {
+    justify-content: right;
+    padding-bottom: 40px;
+}
+
+.register-stylist input[type="text"],
+.register-stylist input[type="email"],
+.register-stylist textarea,
+.register-stylist input[type="number"],
+.register-stylist input[type="date"],
+.register-stylist input[type="time"],
+.right-login-form input[type="text"],
+input[type="password"] {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius: 0px
+}
+
+.register-stylist input[type="tel"] {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius: 0px
+}
+
+.register-stylist select {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius: 0px
+}
+
+.sub-btn-row input[type="submit"] {
+    background-color: #00b2e2;
+    color: #fff;
+    border: 0;
+    width: 190px;
+    padding: 8px;
+    font-weight: 700;
+    border-radius: 30pc;
+}
+
+.reg-headline-bg {
+    background: #731C82;
+    color: #fff;
+}
+
+.reg-headline-bg p {
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 0px;
+}
+
+section.services-list-section {
+    padding-top: 10px;
+}
+
+section.services-list-section h4 {
+    color: #000;
+    font-weight: 600;
+    padding: 8px 0px;
+    font-size: 30px;
+}
+
+.services-list-section fieldset {
+    margin-left: 0px;
+}
+
+.services-list-section fieldset {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.services-list-section input {
+    margin-bottom: 5px;
+}
+
+section#reg-stylist {
+    padding-bottom: 10px;
+}
+
+.sub-btn-parent {
+    text-align: right;
+}
+
+
+/*Register seller form*/
+
+
+/*BOOKING PAGE CSS*/
+
+.booking-btn-reg {
+    margin-top: 50px;
+}
+
+.booking-footer-img img {
+    position: relative;
+    top: -50px;
+    width: 100%;
+}
+
+img.booking-p-logo {
+    width: 149px;
+}
+
+.wrapper.booking-page {
+    padding-top: 45px;
+}
+
+h3.book-now.book-now-heading {
+    font-family: adelline;
+    text-align: right;
+    font-size: 40px;
+}
+
+.row.list-booking-page {
+    padding-top: 35px;
+}
+
+.main-login {
+    height: 100vh;
+}
+
+.login-page-left-img {
+    background: url('../img/Login-left-img.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-right-flex {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+}
+
+.login-pg-logo img {
+    width: 145px;
+}
+
+.login-pg-heading h2 {
+    font-size: 26px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.remember-me fieldset {
+    color: #00B3E3;
+}
+
+.col.forgot-pass {
+    /* padding-top: 22px; */
+    margin: 20px;
+    padding-top: 3px;
+}
+
+.col.forgot-pass a {
+    color: #84b3e3;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.login-pg-heading h2:before {
+    content: "";
+    position: absolute;
+    width: 69px;
+    height: 3px;
+    background-color: #9e27b5;
+    bottom: -4px;
+}
+
+.login-social ul.footer-social li a i {
+    background: #00b3e387;
+    color: #fff;
+}
+
+.login-social ul.footer-social {
+    padding-left: 0px
+}
+
+.login-social ul.footer-social li {
+    margin-left: 0px
+}
+
+.login-social {
+    margin-top: 50px;
+}
+
+.remember-me {
+    padding-top: 50px;
+}
+
+.login-pg-logo {
+    padding-top: 30px;
+}
+
+
+/*BOOKING PAGE CSS*/
+
+
 /*  MOBILE RESPONSIVE START HERE  */
 
 @media only screen and (max-width:690px) {

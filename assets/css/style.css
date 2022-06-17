@@ -88,13 +88,15 @@ a.banner-btn {
     border-radius: 10px;
     font-size: 18px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 img.sec-2-logo {
     width: 200px;
-    height: 100%;
+    /* height: 100%; */
+    height: 100px;
     padding-top: 35px;
-    padding-left: 18px;
+    /* padding-left: 18px; */
 }
 
 section.sec-2 {
@@ -250,6 +252,7 @@ ul.footer-links li a {
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
+    text-decoration: none !important;
 }
 
 ul.footer-social li {
@@ -894,3 +897,144 @@ h3.book-now.book-now-heading {
 
 
 /*MOBILE RESPONSIVE START HERE*/
+
+
+/* Salon anD Spa*/
+
+.leafImg img {
+    width: 45%;
+}
+
+h1.SalonRightHeading,
+h1.SpaRightHeading {
+    font-size: 110px;
+}
+
+
+/* .leafImg {
+    position: absolute;
+    left: 0;
+    width: 20%;
+} */
+
+.salonContent {
+    background-color: #feffee !important;
+}
+
+.spaContent {
+    background-color: #e1f4f9 !important;
+}
+
+.flowerImg {
+    position: absolute;
+    left: 0;
+    width: 18%;
+}
+
+.bottleImg img {
+    padding-bottom: 25px;
+}
+
+.waxCol span,
+.facialCol span,
+.threadingCol span,
+.nailCol span,
+.hairCol span,
+.makeupCol span,
+.hennaCol span,
+.massageCol span,
+.facial2Col span {
+    font-size: 19px;
+}
+
+@media only screen and (max-width:992px) {
+    h1.SalonRightHeading,
+    h1.SpaRightHeading {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1129px) {
+    h1.SalonRightHeading,
+    h1.SpaRightHeading {
+        font-size: 75px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+    h1.SalonRightHeading,
+    h1.SpaRightHeading {
+        font-size: 72px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .waxCol,
+    .facialCol,
+    .threadingCol,
+    .nailCol,
+    .hairCol,
+    .makeupCol,
+    .hennaCol,
+    .massageCol,
+    .facial2Col {
+        padding-bottom: 20px;
+    }
+    .waxCol span,
+    .facialCol span,
+    .threadingCol span,
+    .nailCol span,
+    .hairCol span,
+    .makeupCol span,
+    .hennaCol span,
+    .massageCol span,
+    .facial2Col span {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .waxCol,
+    .facialCol,
+    .threadingCol,
+    .nailCol,
+    .hairCol,
+    .makeupCol,
+    .hennaCol,
+    .massageCol,
+    .facial2Col {
+        padding-right: 20px;
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    h1.SalonRightHeading,
+    h1.SpaRightHeading {
+        font-size: 90px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .waxCol span,
+    .facialCol span,
+    .threadingCol span,
+    .nailCol span,
+    .hairCol span,
+    .makeupCol span,
+    .hennaCol span,
+    .massageCol span,
+    .facial2Col span {
+        font-size: 16px !important;
+    }
+    .massageCol,
+    .facial2Col {
+        text-align: center;
+    }
+}
+
+
+/* 
+.NailImg {
+    position: relative;
+    left: 80%;
+    width: 20%;
+} */

@@ -213,9 +213,10 @@ h3.app-h3 {
     padding-bottom: 9px;
     position: relative;
     z-index: -0;
-    width: 109%;
+    width: 100%;
+    padding-right: 55px;
     display: block;
-    font-size: 46px;
+    font-size: 50px;
     color: #fff;
     margin-bottom: 17px;
     padding-top: 5px;
@@ -687,6 +688,44 @@ h3.book-now.book-now-heading {
 
 /*  MOBILE RESPONSIVE START HERE  */
 
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    h1.banner-heading {
+        font-size: 87px !important;
+    }
+    h3.banner-2-heading {
+        font-size: 30px;
+    }
+    h3.app-h3 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+    h1.banner-heading {
+        font-size: 83px !important;
+    }
+    h3.banner-2-heading {
+        font-size: 30px;
+    }
+    h3.app-h3 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .banner-inner-content {
+        position: absolute;
+        left: 23px;
+    }
+    .banner-inner-content h3 {
+        font-size: 19px;
+    }
+    .banner-inner-content p {
+        font-size: 14px !important;
+        max-width: 68%;
+    }
+}
+
 @media only screen and (max-width:690px) {
     h1 {
         font-size: 47px;
@@ -784,6 +823,33 @@ h3.book-now.book-now-heading {
         text-align: center;
         padding-bottom: 30px;
     }
+    .section-1-bg {
+        background-color: #ecf9c4 !important;
+        background: none;
+    }
+    .banner-inner-content {
+        text-align: center;
+    }
+    .banner-inner-content p {
+        max-width: none !important;
+    }
+    h1.why-heading {
+        font-size: 50px !important;
+    }
+    h1.questionMark {
+        font-size: 50px !important;
+        padding-left: 10px !important;
+    }
+    img.sec-2-logo {
+        width: 100px !important;
+        height: 50px !important;
+    }
+    h3.sec-2-subHeading {
+        font-size: 16px !important;
+    }
+    .DvSubHeading {
+        padding-top: 10px;
+    }
 }
 
 @media only screen and (max-width:459px) {
@@ -797,8 +863,18 @@ h3.book-now.book-now-heading {
 }
 
 @media only screen and (max-width:992px) {
-    h1 {
+    h1.banner-heading {
         font-size: 48px;
+    }
+    h1.why-heading {
+        font-size: 71px;
+    }
+    h1.questionMark {
+        font-size: 65px;
+    }
+    img.sec-2-logo {
+        width: 170px;
+        height: 70px;
     }
     h3 {
         font-size: 21px;
@@ -892,6 +968,18 @@ h3.book-now.book-now-heading {
     }
     ul.footer-links li {
         padding-right: 0px;
+    }
+    div#navbarNavDropdown {
+        text-align: center;
+        padding-top: 20px;
+    }
+    header .navbar img {
+        width: 150px;
+        margin-right: auto;
+        display: block;
+    }
+    h3.app-h3 {
+        text-align: center;
     }
 }
 
